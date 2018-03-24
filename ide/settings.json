@@ -50,6 +50,12 @@
     "[javascript]": {
         "editor.tabSize": 2
     },
+    "[html]": {
+        "editor.tabSize": 2
+    },
+    "[plaintext]": {
+        "files.insertFinalNewline": false,
+    },
 
     // extensions
     "gitlens.blame.line.enabled": false,
