@@ -19,3 +19,9 @@ stereo_out=`pacmd list-sources | grep -oPe "alsa.*monitor"`
 echo "alias recordaudio=\"parec -d ${stereo_out} | lame -r -V0 - \"" >> ~/.zshrc
 # alternative:
 # echo "alias recordaudio=\"parec -d ${stereo_out} --file-format=ogg \"" >> ~/.zshrc
+
+sudo apt install -y dos2unix
+# install linuxbrew and useful tools
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+# echo "PATH=\"/home/linuxbrew/.linuxbrew/bin:$PATH\"" >> ~/.zshrc
+# brew install fzf fd bat diff-so-fancy htop ncdu tldr noti entr
